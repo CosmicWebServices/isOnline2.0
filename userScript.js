@@ -1,3 +1,18 @@
+// ==UserScript==
+// @name         isOnline 2.0
+// @namespace    https://zorgtech.org
+// @version      0.1.1
+// @description  Know who is online on Scratch!
+// @author       A remake of World_Languages isOnline but this time it is allowed ;P
+// @match        https://scratch.mit.edu/*
+// @require      https://code.jquery.com/jquery-3.1.1.min.js
+// @icon         https://raw.githubusercontent.com/WorldLanguages/isOnline/master/green%20cat.png
+// @downloadURL  https://raw.githubusercontent.com/herohamp/isOnline2.0/master/userScript.js
+// @updateURL    https://raw.githubusercontent.com/herohamp/isOnline2.0/master/userScript.js
+// ==/UserScript==
+
+var $ = jQuery;
+
 var username=$( "a:contains('Profile')" ).attr("href").replace("/users/","").replace("/","");
 var forum=false;
 if (window.location.pathname.includes("/discuss/topic/")){
