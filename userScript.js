@@ -22,13 +22,13 @@ function showUsers(users) {
     }
 }
 
-loadJSON('https://isonline-herohamp.c9users.io/listAllOnline',
+loadJSON('https://isonline.herokuapp.com/listAllOnline',
          function(data) { showUsers(data) },
          function(xhr) { alert(xhr); }
 );
 }
 
-httpGetAsync("https://isonline-herohamp.c9users.io/logConnected/"+username,function(){console.log("You are now marked as online")})
+httpGetAsync("https://isonline.herokuapp.com/logConnected/"+username,function(){console.log("You are now marked as online")})
 
 console.log("isOnline2.0 Has now been loaded and edited the webpage");
 console.log("PS tell Herohamp that no one ever reads these things so they don't have to be formal... unless your activly bugfixing.");
